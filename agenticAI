@@ -1,0 +1,24 @@
+from openai import OpenAI
+from anthropic import Anthropic
+from dotenv import load_dotenv
+
+openai = OpenAI()
+response = openapi.chat.completions.create(model, messages) 
+// model = ""
+// messages = [{"role":"", "content":""}]
+answer=response.choices[0].message.content 
+
+deepseek_model=deepseek-chat
+gemini = OpenAI(api_key=, bease_url="googleapi.com") // same way deepseek
+response=gemini.chat.completions.create(model, messages)
+answer=response.choices[0].message.content
+
+-----------------------
+Run olama locally 
+-----------------------
+ollama run llama3
+ollama pull <model_name>
+ollama ls
+ollama rm <model_name>
+-----------------------
+
