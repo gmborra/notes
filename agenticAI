@@ -22,3 +22,23 @@ ollama ls
 ollama rm <model_name>
 -----------------------
 
+Agentis AI Frameworks:
+No framework  -> MCP (opensource protocol) -> OpenAI Agents SDK -> Crew AI -> LangGraph (LangChain) -> AutoGen (Microsoft)
+
+
+
+
+MCP - It is an open-source standard designed to connect AI models (like Gemini, ChatGPT, or Claude) directly to external data sources, applications, and developer tools.
+
+Arch/components:
+Host - host is the application that user interacts with => IDE, desktop chat applications
+Client - MCP client lives in the Host application.Client converts the AI intentions to structured protocol messages.communicateds with MCP servers and send request and receive response 
+server - lightweight program that exposes the capabilities to the AI system
+
+A server can provide:
+
+tools/functions => Tools are executable functions.(run SQL query, send slack msg etc.,) - Give an LLM power to carry out actions like 
+resources/documents => Resources are read-only or contextual data sources. (files, doc, logs etc) fetched not executed
+prompts/templates => 
+workflows
+
